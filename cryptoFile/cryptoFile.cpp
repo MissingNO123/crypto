@@ -57,10 +57,10 @@ string encrypto (char *a, char *b, string aa, string bb, string crypt) {
 			//printLetterArrays(a, b);
 			//cout << "B @ " << ind << ": " << a[ind] << endl;
 			
-				 if (bb.at(i) == '\n')					{crypt += '\n';}//		txtout << '\n'; }
-			else if (bb.at(i) == ' ' )					{crypt += ' ';}//		txtout << ' ';}
-			else if (bb.at(i) < FRCR || bb.at(i) > 'Z')	{crypt += bb.at(i);}// txtout << bb.at(i);}
-			else 										{crypt += b[ind];}//	txtout << b[ind];}
+				 if (bb.at(i) == '\n')			{crypt += '\n';}	//txtout << '\n'; }
+			else if (bb.at(i) == ' ' )			{crypt += ' ';}		//txtout << ' ';}
+			else if (bb.at(i) < FRCR || bb.at(i) > 'Z')	{crypt += bb.at(i);}	//txtout << bb.at(i);}
+			else 						{crypt += b[ind];}	//txtout << b[ind];}
 		}
 	}
 	reverse(crypt.begin(), crypt.end());
@@ -81,10 +81,10 @@ string decrypto (char *a, char *b, string aa, string bb, string crypt) {
 			//printLetterArrays(a, b);
 			//cout << "B @ " << ind << ": " << a[ind] << endl;
 			
-				 if (bb.at(i) == '\n')					{crypt += '\n';}//		txtout << '\n'; }
-			else if (bb.at(i) == ' ' )					{crypt += ' ';}//		txtout << ' ';}
-			else if (bb.at(i) < FRCR || bb.at(i) > 'Z')	{crypt += bb.at(i);}//  txtout << bb.at(i);}
-			else										{crypt += b[ind];}//	txtout << b[ind];}
+				 if (bb.at(i) == '\n')			{crypt += '\n';}	//txtout << '\n'; }
+			else if (bb.at(i) == ' ' )			{crypt += ' ';}		//txtout << ' ';}
+			else if (bb.at(i) < FRCR || bb.at(i) > 'Z')	{crypt += bb.at(i);}	//txtout << bb.at(i);}
+			else						{crypt += b[ind];}	//txtout << b[ind];}
 		}
 	}
 	txtout << crypt;
@@ -133,7 +133,7 @@ int main () {
 	int* selection = new int;
 	string crypt(""), c1("");
 	string* c2 = new string;
-	ifstream txtin, decIn;
+	ifstream txtin, decIn; //disgusting
 	initLetterArrays(abc, abc2);
 	
 	do {
