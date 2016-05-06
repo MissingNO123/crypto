@@ -57,7 +57,7 @@ string encrypto (char *a, char *b, string aa, string bb, string crypt) {
 			//printLetterArrays(a, b);
 			//cout << "B @ " << ind << ": " << a[ind] << endl;
 			
-				 if (bb.at(i) == '\n')			{crypt += '\n';}	//txtout << '\n'; }
+			     if (bb.at(i) == '\n')			{crypt += '\n';}	//txtout << '\n'; }
 			else if (bb.at(i) == ' ' )			{crypt += ' ';}		//txtout << ' ';}
 			else if (bb.at(i) < FRCR || bb.at(i) > 'Z')	{crypt += bb.at(i);}	//txtout << bb.at(i);}
 			else 						{crypt += b[ind];}	//txtout << b[ind];}
@@ -81,7 +81,7 @@ string decrypto (char *a, char *b, string aa, string bb, string crypt) {
 			//printLetterArrays(a, b);
 			//cout << "B @ " << ind << ": " << a[ind] << endl;
 			
-				 if (bb.at(i) == '\n')			{crypt += '\n';}	//txtout << '\n'; }
+			     if (bb.at(i) == '\n')			{crypt += '\n';}	//txtout << '\n'; }
 			else if (bb.at(i) == ' ' )			{crypt += ' ';}		//txtout << ' ';}
 			else if (bb.at(i) < FRCR || bb.at(i) > 'Z')	{crypt += bb.at(i);}	//txtout << bb.at(i);}
 			else						{crypt += b[ind];}	//txtout << b[ind];}
