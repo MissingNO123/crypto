@@ -1,0 +1,2 @@
+language: cpp
+script: g++ /cryptoFile/cryptoFile.cpp
